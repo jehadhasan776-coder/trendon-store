@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_margin="8dp">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <!-- Product Info Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اسم المنتج"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/product_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 4.5"
+            android:textSize="12sp"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Stock Status -->
+        <TextView
+            android:id="@+id/product_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المتوفر: 5"
+            android:textSize="12sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Bottom Row: Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.00 د.ا"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
